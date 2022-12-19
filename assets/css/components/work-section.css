@@ -1,4 +1,4 @@
-#grid-section .grid-one-content {
+#work-section .work-content {
     height: 110vh;
     display: flex;
     flex-flow: column wrap;
@@ -7,30 +7,30 @@
 
 }
 
-#grid-section .grid-one-content h2 {
+#work-section .work-content h2 {
     text-transform: uppercase;
 }
 
-#grid-section .grid-one-content p {
+#work-section .work-content p {
     color: var(--secondary-color);
     padding-bottom: 4rem;
 }
 
-#grid-section .grid-one-content .grid {
+#work-section .work-content .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
 }
 
-#grid-section .grid-one-content .grid h3 {
+#work-section .work-content .grid h3 {
     font-size: 3rem;
     position: relative;
     padding-left: 8rem;
     padding-bottom: 3rem;
 }
 
-#grid-section .grid-one-content .grid h3:first-child:before {
+#work-section .work-content .grid h3:first-child:before {
     counter-increment: grid-counter;
     content: counter(grid-counter);
     font-size: 8rem;
