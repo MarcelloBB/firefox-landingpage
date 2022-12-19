@@ -1,0 +1,14 @@
+
+#top-3-section .top-3-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    height: 110vh;
+    max-width: 80rem;
+}
+
+#top-3-section .top-3-content h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
