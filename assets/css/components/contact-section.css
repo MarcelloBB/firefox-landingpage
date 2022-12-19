@@ -1,0 +1,107 @@
+#contact-section {
+    width: 100%;
+}
+
+#contact-section .contact-content p {
+    color: var(--secondary-color);
+}
+
+#contact-section .contact-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    min-height: 110vh;
+}
+
+#contact-section .contact-content .contact-text-content {
+    display: flex;    
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+#contact-section .contact-content .contact-text-content h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+    line-height: 1.2;
+}
+
+#contact-section .contact-content .contact-img {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#contact-section .contact-content .contact-img img {
+    max-width: 100%;  
+    width: 70%;  
+}
+
+#contact-section .contact-content .contact-form {
+    grid-column: span 2;
+    margin-top: 3rem;
+}
+
+#contact-section .contact-content .contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-flow: column wrap; /*row wrap */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-section .contact-content .contact-form .form-grid legend {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#contact-section .contact-content .contact-form .form-grid .form-group {
+    flex: 1 1 10rem; /*32rem*/
+    width: 60%;
+}
+
+#contact-section .contact-content .contact-form .form-grid .form-group label {
+    display: block;
+    margin-bottom: .8rem;
+}
+
+#contact-section .contact-content .contact-form .form-grid .form-group input,
+#contact-section .contact-content .contact-form .form-grid .form-group textarea {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 1.5rem 2rem;
+    width: 100%; /* 100 */
+    font-size: 1.7rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+#contact-section .contact-content .contact-form .form-grid .form-group button {
+    display: block;
+    border: 0.1rem solid var(--light-gray-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    width: 40%;
+    margin: 2rem 0 0;
+}
+
+#contact-section .contact-content .contact-form .form-grid .form-group button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#contact-section .contact-content .contact-form .form-grid .form-group ::placeholder {
+    color: rgb(204, 183, 183);
+    font-size: 2rem;
+}
