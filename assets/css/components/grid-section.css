@@ -1,7 +1,7 @@
 #grid-section .grid-one-content {
-    height: 110vh;
+    min-height: 110vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     gap: var(--gap);
     justify-content: center;
 

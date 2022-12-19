@@ -13,11 +13,12 @@
 .main-container {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
     min-height: 100vh;
+    min-width: 100%;
 }
 
 .menu-spacing {

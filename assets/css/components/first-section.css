@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
 
-    height: 110vh;
+    min-height: 110vh;
 }
 
 #first-section .intro-content .intro-text-content {

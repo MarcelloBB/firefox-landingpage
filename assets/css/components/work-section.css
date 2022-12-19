@@ -1,5 +1,5 @@
 #work-section .work-content {
-    height: 110vh;
+    min-height: 110vh;
     display: flex;
     flex-flow: column wrap;
     gap: var(--gap);

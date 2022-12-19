@@ -1,0 +1,43 @@
+#pricing-section .pricing-content {
+    display: flex;
+    min-height: 110vh;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    max-width: 80rem;
+    gap: var(--gap);
+}
+
+#pricing-section .pricing-content h2 {
+    text-transform: uppercase;
+}
+
+#pricing-section .pricing-content .responsive-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#pricing-section .pricing-content .responsive-table table {
+    width: 100%;
+    min-width: 36rem;
+    border-collapse: collapse;
+}
+
+#pricing-section .pricing-content .responsive-table table td, 
+#pricing-section .pricing-content .responsive-table table th {
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+#pricing-section .pricing-content .responsive-table table th {
+    background-color: var(--light-gray-color);
+}
+
+#pricing-section .pricing-content .responsive-table table caption {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 1rem;
+}
