@@ -1,5 +1,5 @@
 
-#top-3-section .top-3-content {
+#desc-section .desc-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -8,7 +8,7 @@
     max-width: 80rem;
 }
 
-#top-3-section .top-3-content h2 {
+#desc-section .desc-content h2 {
     font-size: 5rem;
     text-transform: uppercase;
 }
