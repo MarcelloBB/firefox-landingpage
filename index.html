@@ -17,12 +17,16 @@
 </head>
 <body>
     
+    <input type="checkbox" name="close-menu" id="close-menu" class="close-menu" aria-label="Close menu" role="Button">
+    <label for="close-menu" class="close-menu-label" title="close-menu"></label>
+
     <header id="header" class="white-bg">
         <div class="header-container main-container">
-            <h1><a href="#first-section">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false"><a href="#first-section">LOGO</a></h1>
 
             <nav class="navigation">
-                <ul>
+
+                <ul id="menu" class="menu" onclick="getElementById('close-menu').checked = false">
                     <li><a href="#desc-section">Intro</a></li>
                     <li><a href="#grid-section">Top 3</a></li>
                     <li><a href="#gallery-section">Gallery</a></li>
@@ -267,5 +271,6 @@
         </div>
     </footer>
 
+    <a href="#first-section" class="back-to-top">➤</a>
 </body>
 </html>

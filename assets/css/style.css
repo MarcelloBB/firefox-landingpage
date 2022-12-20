@@ -4,7 +4,8 @@
 :root {
     --primary-color: #0a1128;
     --secondary-color: #fff;
-    --light-gray-color: rgb(235, 229, 229);
+    --light-gray-color: #ebe5e5;
+    --dark-gray-color: rgb(180, 175, 175);
     --gap: 3rem;
 }
 
@@ -129,13 +130,13 @@ body .full-width {
     color: var(--primary-color);
 }
 
-.header-container .navigation ul{
+.header-container .navigation .menu{
     display: flex;
     flex-flow: row;
     gap: var(--gap);
 }
 
-.header-container .navigation ul li a {
+.header-container .navigation .menu li a {
     display: block;
     padding: 2rem;
     font-size: 1.8rem;
@@ -520,11 +521,88 @@ body .full-width {
     font-size: 1.5rem;
 }
 
+.close-menu {
+    display: none;
+}
+
+/*========================================================*/
+/* BACK TO TOP                                            */
+/*========================================================*/
+.back-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: var(--secondary-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border: 0.1rem solid var(--dark-gray-color);
+    transform: rotate(270deg);
+}
+
 /*========================================================*/
 /* RESPONSIVE                                             */
 /*========================================================*/
 @media (max-width: 800px)
 {   
+    .menu-spacing 
+    {
+        display: none;
+    }
+
+    #header 
+    {
+        bottom: 0;
+        text-align: center;
+        visibility: hidden;/*display none*/
+    }
+
+    .header-container, .header-container .navigation .menu
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container 
+    {
+        height: 100vh;
+        transition: 400ms;
+    }
+
+    .close-menu-label::after
+    {
+        content: "☰";
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .close-menu:checked ~ #header
+    {
+        visibility: visible; /* display block*/
+    }
+
+    .close-menu:checked ~ .close-menu-label::after
+    {
+        content: "×";
+    }
+
 
     #first-section .intro-content
     {
