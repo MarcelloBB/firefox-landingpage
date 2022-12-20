@@ -581,7 +581,7 @@ body .full-width {
     {
         height: 100vh;
         transition: 400ms;
-        margin: 5rem;
+        margin: -1rem;
     }
 
     .close-menu-label::after
