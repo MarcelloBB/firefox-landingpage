@@ -421,7 +421,7 @@ body .full-width {
 #contact-section .contact-content .contact-text-content {
     display: flex;    
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #contact-section .contact-content .contact-text-content h2 {
