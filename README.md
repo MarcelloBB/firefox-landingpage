@@ -11,7 +11,7 @@ In this project you can find
 - [x] 🏖️**High resolution SVGs** (background provided by _SVG Backgrounds_ - https://www.svgbackgrounds.com/#confetti-doodles)
 
 ## 🖥️ Result
-To feel the magic please go to ✨https://firefoxlanding.netlify.app/✨
+To feel the magic please go to ✨ https://firefoxlanding.netlify.app/ ✨
 
 ## 📌 Credits
 Marcello B., 
