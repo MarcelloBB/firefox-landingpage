@@ -43,5 +43,5 @@ Please visit the webpage to check the contact form<br><br>
 To feel the magic please go to ✨ https://firefoxlanding.netlify.app/ ✨
 
 ## 📌 Credits
-Marcello B., 
+Marcello B.,  
 2022
